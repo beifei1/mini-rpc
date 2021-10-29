@@ -7,7 +7,7 @@ import cn.minirpc.core.serialize.Serializer;
  * @Date: 2021/10/29 14:41
  */
 
-public class Hession1Serializer implements Serializer {
+public class HessianSerializer implements Serializer {
     @Override
     public <T> byte[] serialize(T object) {
         return new byte[0];
