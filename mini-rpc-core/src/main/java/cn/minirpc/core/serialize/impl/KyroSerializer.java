@@ -9,7 +9,6 @@ import cn.minirpc.core.serialize.Serializer;
 
 public class KyroSerializer implements Serializer {
 
-
     @Override
     public <T> byte[] serialize(T object) {
         return new byte[0];
