@@ -13,9 +13,7 @@ public interface Serializer {
      * @param <T>
      * @return
      */
-    default <T> byte[] serialize(T object) {
-        return null;
-    }
+    <T> byte[] serialize(T object);
 
     /**
      * 反序列化
@@ -24,8 +22,6 @@ public interface Serializer {
      * @param <T>
      * @return
      */
-    default <T> Object deserialize(byte[] bytes, Class<T> clazz) {
-        return null;
-    }
+    <T> Object deserialize(byte[] bytes, Class<T> clazz);
 
 }
